@@ -1,0 +1,89 @@
+@mixin body-place {
+  margin: 0;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0;
+  background-color: map-get($map: $colors, $key: bg-color);
+}
+@mixin logo-gif {
+  width: 256px;
+  height: 128px;
+  border-radius: 12px;
+}
+@mixin navbar {
+  background-color: map-get($map: $colors, $key: navbar-bg-color);
+}
+@mixin navbar-link {
+  background-color: map-get($map: $colors, $key: dark-primary-color);
+  border-radius: 2px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 7px 16px 7px 16px !important;
+}
+@mixin bio-title {
+  color: map-get($map: $colors, $key: primary-color);
+  font-size: 36px;
+  line-height: 48px;
+  text-decoration: underline white;
+  text-decoration-thickness: 3px;
+}
+@mixin xs-bio-text {
+  @media screen and (max-width: 767.98px) {
+    text-align: center !important ;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    text-decoration: underline white 2px !important;
+  }
+}
+@mixin xs-bio-desc {
+  @media screen and (max-width: 767.98px) {
+    text-align: center !important ;
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+}
+@mixin bio-desc {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 16px;
+}
+@mixin footer {
+  background-color: map-get($map: $colors, $key: navbar-bg-color);
+  padding-top: 56px;
+}
+@mixin copy-date {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 900;
+}
+@mixin footer-end-line {
+  border-bottom: 1px solid map-get($map: $colors, $key: gray-tone);
+  padding-top: 28px;
+}
+@mixin social-icon-links-top {
+  display: flex;
+  padding: 28px 0;
+  justify-content: space-around;
+}
+@mixin social-icon {
+  text-decoration: none;
+  color: map-get($map: $colors, $key: gray-tone);
+}
+@mixin social-icon-links-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: $pt28 0;
+}
+@mixin social-icon-link-align {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}

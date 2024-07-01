@@ -1,0 +1,163 @@
+@import "values";
+@import "colors";
+@import "class";
+
+body {
+  @include body-place;
+}
+// navbar start ---------------------------
+nav {
+  @include navbar;
+
+  img {
+    @include logo-gif;
+  }
+  li {
+    padding-right: 24px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  .navbar-link {
+    @include navbar-link;
+    transition: 300ms;
+    &:hover {
+      background-color: #1d72c7;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 600;
+      transform: scale(1.2);
+    }
+  }
+}
+
+// navbar end ---------------------------
+
+// header start ---------------------------
+header {
+  .bio-img {
+    text-align: center;
+    img {
+      border-radius: 6px;
+    }
+    .sm-bio-img {
+      @media screen and (min-width: 768px) {
+        .bio-img {
+          width: 80%;
+          height: 80%;
+          object-fit: cover;
+        }
+      }
+    }
+    .lg-bio-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .xs-bio-img {
+      @media screen and (max-width: 767.98px) {
+        width: 70%;
+        height: 70%;
+
+        object-fit: cover;
+      }
+    }
+  }
+
+  margin-top: 332px;
+  .bio-title-area {
+    .xs-bio-text {
+      margin-top: 24px;
+      @include xs-bio-text;
+    }
+    .bio-title {
+      @include bio-title;
+    }
+  }
+  .bio-desc-area {
+    .bio-desc {
+      @include bio-desc;
+      @include xs-bio-desc;
+    }
+  }
+}
+// header end ---------------------------
+
+// section start ------------------------
+section {
+  margin-top: 332px;
+  .projects-area {
+    padding-bottom: 332px;
+    h2 {
+      @include bio-title;
+    }
+    p {
+      @include bio-desc;
+      a {
+        text-decoration: underline 2px;
+        text-decoration-color: white;
+      }
+    }
+  }
+}
+// section end --------------------------
+
+// footer start -------------------------
+footer {
+  h2 {
+    @include copy-date;
+  }
+  .brand-logo-place {
+    display: flex;
+    justify-content: flex-end;
+  }
+  @include footer;
+  .footer-end-line {
+    @include footer-end-line;
+  }
+  .social-icon-links-top {
+    @include social-icon-links-top;
+    padding: $pt28 0;
+    @media screen and (max-width: 576px) {
+      display: flex;
+      margin-top: 32px;
+    }
+    a {
+      @include social-icon;
+
+      transition: 300ms;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .footer-link-area {
+    .social-icon-links-bottom {
+      @include social-icon-links-bottom;
+      a {
+        @include social-icon;
+        transition: 300ms;
+        &:hover {
+          transform: scale(1.2);
+        }
+        svg {
+          path {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+    .social-links {
+      @include social-icon-link-align;
+      a {
+        @include social-icon;
+        transition: 300ms;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+// footer end ---------------------------

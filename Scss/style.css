@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0;
+  background-color: #1a2130;
+}
+
+nav {
+  background-color: #303952;
+}
+nav img {
+  width: 256px;
+  height: 128px;
+  border-radius: 12px;
+}
+nav li {
+  padding-right: 24px;
+}
+nav li:last-child {
+  padding-right: 0;
+}
+nav .navbar-link {
+  background-color: #546de5;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 7px 16px 7px 16px !important;
+  transition: 300ms;
+}
+nav .navbar-link:hover {
+  background-color: #1d72c7;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  transform: scale(1.2);
+}
+
+header {
+  margin-top: 332px;
+}
+header .bio-img {
+  text-align: center;
+}
+header .bio-img img {
+  border-radius: 6px;
+}
+@media screen and (min-width: 768px) {
+  header .bio-img .sm-bio-img .bio-img {
+    width: 80%;
+    height: 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+header .bio-img .lg-bio-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 767.98px) {
+  header .bio-img .xs-bio-img {
+    width: 70%;
+    height: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+header .bio-title-area .xs-bio-text {
+  margin-top: 24px;
+}
+@media screen and (max-width: 767.98px) {
+  header .bio-title-area .xs-bio-text {
+    text-align: center !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    -webkit-text-decoration: underline white 2px !important;
+            text-decoration: underline white 2px !important;
+  }
+}
+header .bio-title-area .bio-title {
+  color: #007bff;
+  font-size: 36px;
+  line-height: 48px;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+  text-decoration-thickness: 3px;
+}
+header .bio-desc-area .bio-desc {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 16px;
+}
+@media screen and (max-width: 767.98px) {
+  header .bio-desc-area .bio-desc {
+    text-align: center !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+}
+
+section {
+  margin-top: 332px;
+}
+section .projects-area {
+  padding-bottom: 332px;
+}
+section .projects-area h2 {
+  color: #007bff;
+  font-size: 36px;
+  line-height: 48px;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+  text-decoration-thickness: 3px;
+}
+section .projects-area p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 16px;
+}
+section .projects-area p a {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  text-decoration-color: white;
+}
+
+footer {
+  background-color: #303952;
+  padding-top: 56px;
+}
+footer h2 {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 900;
+}
+footer .brand-logo-place {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .footer-end-line {
+  border-bottom: 1px solid #cedbdc;
+  padding-top: 28px;
+}
+footer .social-icon-links-top {
+  display: flex;
+  justify-content: space-around;
+  padding: 28px 0;
+}
+@media screen and (max-width: 576px) {
+  footer .social-icon-links-top {
+    display: flex;
+    margin-top: 32px;
+  }
+}
+footer .social-icon-links-top a {
+  text-decoration: none;
+  color: #cedbdc;
+  transition: 300ms;
+}
+footer .social-icon-links-top a:hover {
+  transform: scale(1.2);
+}
+footer .footer-link-area .social-icon-links-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 28px 0;
+}
+footer .footer-link-area .social-icon-links-bottom a {
+  text-decoration: none;
+  color: #cedbdc;
+  transition: 300ms;
+}
+footer .footer-link-area .social-icon-links-bottom a:hover {
+  transform: scale(1.2);
+}
+footer .footer-link-area .social-icon-links-bottom a svg path {
+  width: 16px;
+  height: 16px;
+}
+footer .footer-link-area .social-links {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+footer .footer-link-area .social-links a {
+  text-decoration: none;
+  color: #cedbdc;
+  transition: 300ms;
+}
+footer .footer-link-area .social-links a:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=style.css.map */
